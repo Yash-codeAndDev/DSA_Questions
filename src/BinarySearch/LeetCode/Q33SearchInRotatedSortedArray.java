@@ -35,7 +35,7 @@ public class Q33SearchInRotatedSortedArray {
             }
             // check if sorted part of nums of form low to mid
             else{
-                if(nums[mid] <= target && target < nums[high]){
+                if(nums[mid] <= target && target <= nums[high]){
                     low = mid+1;
                 }else{
                     high = mid-1;
